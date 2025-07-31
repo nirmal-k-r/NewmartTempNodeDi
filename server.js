@@ -66,6 +66,7 @@ server.use((err, req, res, next) => {
 
 // Start the server
 const port = process.env.PORT || 3000; //set port to 3000 or environment variable PORT
-server.listen(port, () => {
+ip='0.0.0.0';
+server.listen(port, ip, () => {
   console.log(`Server is listening on port ${port}`);
 });
